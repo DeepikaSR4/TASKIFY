@@ -1,0 +1,117 @@
+
+body{
+    margin:10px;
+    margin-top: 25px;
+    min-width: 300px;
+    background-color: blanchedalmond; 
+}
+ 
+*{
+    box-sizing: border-box;
+    
+}
+
+.The-Header {
+background-image: url("https://images.unsplash.com/photo-1521729839347-131a32f9abcb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1032&q=80");
+padding : 30px 40px;
+background-size:cover;
+color :rgb(0, 0, 0) ;
+text-align: center;
+font-size: 30px;
+
+}
+.The-Header:after{
+    content: "";
+    display: table;
+    clear:both;
+}
+#the-input{
+    padding: 10px;
+    float:left;
+    font-size: 15px;
+    margin: 0;
+    border: none;
+    border-radius: 0px;
+    width: 70%;
+    
+}
+.Create-Button{
+    padding: 10px;
+    background-color: #ff7479;
+    width: 30%;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.897);
+    float:right;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0px;
+    -webkit-transition: 0.4s time;
+    -moz-transition: 0.4s time ;
+    -ms-transition: 0.4 time;
+    transition: 0.4s;
+}
+.Create-Button:hover { 
+    background-color: #ccc;
+
+}
+
+
+ul {
+    margin: 0; 
+    padding: 0;
+}
+
+ul li {
+    position: relative;
+    background-color: #FF7A5A;
+    list-style-type: none;
+    cursor: pointer;padding: 10px 5px 10px 30px;
+    transition: 0.3s;
+    font-size: 30px;
+
+    /*making list unselectable*/
+    -webkit-user-select: none ;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none ;
+}
+ul li:nth-child(odd){
+    background-color:#0eccbf;
+}
+ul li:hover{
+    background-color:#ffa12e ;
+}
+ul li.checked {
+    background:#282828;
+    color:rgb(122, 111, 111);
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    content:"";
+    position: absolute;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 15px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 10px;
+}
+
+
+.close{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 10px 15px 10px 15px ;
+}
+.close:hover{
+    background: rgb(206, 71, 71);
+}
+
+
+
+
+
+
